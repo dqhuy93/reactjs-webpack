@@ -2,7 +2,8 @@ import { lazy } from 'react';
 import reactlogo from './assets/images/logo.svg';
 import './assets/styles/app.css';
 import './assets/styles/app.scss';
-const About = lazy(() => import('./pages/About'));
+const About = lazy(() => import('./pages/About/About'));
+const Contact = lazy(() => import('./pages/Contact/Contact'));
 
 const App = () => {
   return (
@@ -15,6 +16,8 @@ const App = () => {
         fugiat.
       </h2>
       <About />
+      <br />
+      <Contact />
     </div>
   );
 };

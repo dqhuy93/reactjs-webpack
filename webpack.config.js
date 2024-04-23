@@ -1,3 +1,4 @@
+/* cSpell:disable */
 /* eslint-disable @typescript-eslint/no-var-requires */
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -82,9 +83,10 @@ module.exports = (env, argv) => {
     },
 
     output: {
-      filename: 'static/js/main.[contenthash:6].js', // Thêm mã hash tên file dựa vào content để tránh bị cache bởi CDN hay browser.
-      path: path.resolve(__dirname, 'dist'), // Build ra thư mục dist
-      publicPath: '/'
+      filename: 'static/js/[name].[contenthash:6].js', // Thêm mã hash tên file dựa vào content để tránh bị cache bởi CDN hay browser.
+      // chunkFilename: 'static/js/[name].chemgio.bundle.js', // format name của bundle
+      path: path.resolve(__dirname, 'dist') // Build ra thư mục dist
+      // publicPath: '/'
     },
     devServer: {
       hot: true, // enable Hot Module Replacement, kiểu như reload nhanh
@@ -133,9 +135,10 @@ module.exports = (env, argv) => {
       })
     ],
     optimization: {
-      chunkIds: 'deterministic',
+      // usedExports: 'global',
       splitChunks: {
         chunks: 'all'
+        // minSize: 5000
       }
     }
   };
