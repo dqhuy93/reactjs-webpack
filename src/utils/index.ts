@@ -5,3 +5,5 @@ export * from './checkExistInString';
 export * from './slideWindow';
 export * from './changeOneToZeroFindMaxLenght';
 export * from './sumArray';
+export * from './lenOfLongSubarr';
+export * from './maxLengthSubstr';

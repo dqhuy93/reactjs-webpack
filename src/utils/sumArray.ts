@@ -23,8 +23,8 @@ export function sumArray(arr: number[]) {
 const data1 = [7, 5, 2, -4];
 
 const result = sumArray(data1);
-console.log('sumArray');
-console.log(result);
+// console.log('sumArray');
+// console.log(result);
 
 // Solution 2
 
