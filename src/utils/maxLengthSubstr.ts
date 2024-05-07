@@ -34,4 +34,4 @@ export function maxLengthSubstr(S: string, K: number) {
 // Example usage:
 const S = 'queue';
 const K = 2;
-console.log('maxLengthSubstr : ', maxLengthSubstr(S, K)); // Output: 4
+// console.log('maxLengthSubstr : ', maxLengthSubstr(S, K)); // Output: 4
