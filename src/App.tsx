@@ -2,7 +2,8 @@ import { lazy } from 'react';
 import reactlogo from './assets/images/logo.svg';
 import './assets/styles/app.css';
 import './assets/styles/app.scss';
-import About from '@pages/About';
+// import About from '@pages/About';
+// import LikeButton from './components/Test';
 // const About = lazy(() => import('./pages/About'));
 import './utils';
 

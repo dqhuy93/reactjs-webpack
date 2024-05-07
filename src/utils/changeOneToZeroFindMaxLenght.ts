@@ -75,5 +75,5 @@ export function findLengthVersion2(text: string) {
 }
 
 const result2 = findLengthVersion2(data1);
-console.log('findLengthVersion2');
-console.log(result2);
+// console.log('findLengthVersion2');
+// console.log(result2);

@@ -7,3 +7,4 @@ export * from './changeOneToZeroFindMaxLenght';
 export * from './sumArray';
 export * from './lenOfLongSubarr';
 export * from './maxLengthSubstr';
+export * from './binarySearch';
