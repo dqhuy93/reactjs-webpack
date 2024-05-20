@@ -10,28 +10,17 @@ export function findLength(text: string) {
   // let arrayResult: number[] = [];
   for (let right = 0; right < text.length; right++) {
     const temp = text.split('');
-
-    // temp.splice(left + 1, 0, ']');
-    // temp.splice(left, 0, '[right: ');
-
     temp.splice(right + 1, 0, ']');
     temp.splice(right, 0, '[');
-    console.log('text: ', temp.join(''));
 
     if (text[right] == '0') {
       curr++;
-      console.log('Thỏa text[right] == 0 ---> curr++ | curr = ', curr);
     }
     while (curr > 1) {
-      console.log('curr > 1 ---> left++');
-
       if (text[left] == '0') {
-        console.log('Lúc này left = ', left);
         curr--;
-        console.log(`LEFT: text[${left}] == 0  ---> curr-- | curr = `, curr);
       }
 
-      console.log('left++ | left = ', left);
       left++;
     }
 

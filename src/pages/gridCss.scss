@@ -1,0 +1,47 @@
+.gridCss {
+  display: grid;
+  // grid-template-areas:
+  //   'header header header'
+  //   'sidebar content content'
+  //   'sidebar comment comment'
+  //   'footer footer footer';
+  grid-template-columns: repeat(4, 1fr);
+  // grid-auto-rows: minmax(50px, auto);
+  grid-template-rows: 350px 100px 350px;
+  background-color: red;
+  // height: 800px;
+  column-gap: 10px;
+  row-gap: 10px;
+  img {
+    max-width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+}
+
+.gridCss-item {
+}
+
+.gridCss-1 {
+  grid-column: 1/3;
+}
+
+.gridCss-2 {
+  grid-column: 3 / 4;
+  grid-row: 1/3;
+}
+.gridCss-3 {
+  grid-column: 4 / 5;
+  grid-row: 1/3;
+}
+.gridCss-4 {
+  grid-column: 1 / 2;
+  grid-row: 2/4;
+}
+.gridCss-5 {
+  grid-column: 2 / 3;
+  grid-row: 2/4;
+}
+.gridCss-6 {
+  grid-column: 3/5;
+}
